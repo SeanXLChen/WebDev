@@ -51,19 +51,34 @@
     <br />
 
     <table>
-      <tr>
-        <th>name</th>
-        <th>age</th>
-        <th>phone</th>
-      </tr>
-      <tr>
-        <td>Sean</td>
-        <td>18908459985</td>
-        <td>27</td>
-      </tr>
+      <thead>
+        <tr>
+          <th rowspan="2">Animal</th>
+          <th colspan="2">Avg. Mass</th>
+          <th rowspan="2">Flighted</th>
+        </tr>
+        <tr>
+          <th>kg</th>
+          <th>lb</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ostrich</td>
+          <td>27</td>
+          <td>280</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Somali</td>
+          <td>38</td>
+          <td>190</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
     </table>
 
-    <hr>
+    <hr />
 
     <h3>Skills</h3>
     <table cellspacing="20">
@@ -82,15 +97,41 @@
     </table>
 
     <form action="" method="post">
-        <label>Your Name: </label>
-        <input type="text">
-        <input type="button" value="submit">
-        <input type="checkbox" name="check" id="">
+      <label>Your Name: </label>
+      <input type="text" />
+      <input type="button" value="submit" />
+      <input type="checkbox" name="check" id="" />
     </form>
-    <br>
+    <br />
 
-    <hr>
+    <hr />
 
     <a href="forms.html">Contact Me</a>
+
+    <form action="/birds">
+        <input type="radio" name="size" id="s" value="size_s">
+        <label for="xs">:S</label>
+        <input type="radio" name="size" id="m" value="size_m">
+        <label for="xs">:M</label>
+        <input type="radio" name="size" id="l" value="size_l">
+        <label for="xs">:L</label>
+    </form>
+
+    <form action="" method="get">
+        <label for="meal">Please select your food</label>
+        <select name="meal_select" id="meal">
+                <option value="">--Please choose an option</option>
+                <option value="steak">Steak</option>
+                <option value="fish" selected>Fish</option>
+        </select>
+    </form>
+
+    <form action="/search">
+        <label for="cheese">Cheese Level: </label>
+        <input type="range" name="cheese_lvl" id="cheese" min="0" max="5">
+        <input type="submit" value="Submit!">
+    </form>
+
   </body>
 </html>
+
