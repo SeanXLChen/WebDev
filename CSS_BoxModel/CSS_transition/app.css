@@ -1,0 +1,15 @@
+.circle {
+    background-color: rosybrown;
+    width: 300px;
+    height: 300px;
+    border: 10px solid bisque;
+    border-radius: 50%;
+    /* 只变 border-radius
+    transition: border-radius 1.5s; */
+    transition: all 1s;
+}
+
+.circle:hover {
+    border-radius: 15%;
+    background-color: royalblue;
+}
