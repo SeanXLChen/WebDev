@@ -10,5 +10,8 @@ const person = {
             console.log(this);
             console.log(this.fullName())
         }, 3000)
+    },
+    testName: function() {
+        console.log(this.fullName());
     }
 }
